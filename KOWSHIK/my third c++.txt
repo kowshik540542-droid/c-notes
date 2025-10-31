@@ -1,0 +1,39 @@
+#include <iostream>
+ using namespace std;
+class teacher{
+    public :
+    string name;
+    string subject;
+    int EXP;
+  
+
+//function to display output
+    void display()
+    {
+     cout<<"name :"<<name<<endl;
+     cout<<"subject :"<<subject<<endl;
+     cout<<" EXP :"<<EXP<<endl;
+    }
+    
+    
+    
+    
+};
+
+    int main() {
+   teacher teacher1;
+    cout<<"enter the name :";
+    cin >> teacher1.name;
+    cout<<"enter the subject :";
+    cin>> teacher1.subject;
+    
+    cout<<"enter the EXP :";
+    cin >> teacher1.EXP;
+
+    cin.ignore();
+    cout<<endl;   
+         
+    
+   teacher1.display();
+    return 0;
+}
